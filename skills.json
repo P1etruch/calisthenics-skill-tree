@@ -1,77 +1,839 @@
 [
-  { 
-    "id": "hanging_leg_raises", 
-    "name": "Wznosy nóg do drążka",
-    "tier": 1, 
-    "prerequisites": [], 
-    "equipment": ["Drążek"], 
-    "tips": "Unoszenie idealnie prostych nóg aż do dotknięcia drążka stopami.", 
-    "unlock_criteria": "8–10 powtórzeń w pełnej kontroli, ze spokojnym 2-sekundowym opuszczaniem nóg." 
-  },
-  { 
-    "id": "adv_tuck_front_lever", 
-    "name": "Advanced Tuck Front Lever", 
-    "tier": 2, 
-    "prerequisites": ["hanging_leg_raises"], 
-    "equipment": ["Drążek"], 
-    "tips": "Przesunięcie kolan w tył tak, aby kąt między udami a tułowiem wynosił 90°. Plecy całkowicie płaskie.", 
-    "unlock_criteria": "15–20 sekund czystego, stabilnego trzymania bez uginania łokci." 
-  },
-  { 
-    "id": "straddle_front_lever", 
-    "name": "Straddle Front Lever", 
-    "tier": 3, 
-    "prerequisites": ["adv_tuck_front_lever"], 
-    "equipment": ["Drążek"], 
-    "tips": "Obie nogi wyprostowane i szeroko rozszerzone na boki. Im szerszy rozkrok, tym środek ciężkości bliżej dłoni.", 
-    "unlock_criteria": "10–12 sekund w pozycji Straddle z biodrami w jednej linii z barkami."
-  },
-  { 
-    "id": "full_front_lever", 
-    "name": "Full Front Lever",
-    "tier": 4, 
-    "prerequisites": ["straddle_front_lever"], 
-    "equipment": ["Drążek"], 
-    "tips": "Ciało w idealnie poziomej linii równoległej do podłoża. Nogi złączone, pośladki spięte, łopatki w depresji.",
-    "unlock_criteria": "3–5 sekund kontrolowanego zatrzymania bez zapadania się bioder w dół."
-  }
-]
-
-[
   {
-    "id": "box_pike_hold",
-    "name": "Box Pike Hold",
+    "id": "plank",
+    "name": "Plank (Deska)",
     "tier": 1,
     "prerequisites": [],
-    "equipment": ["Podwyższenie"],
-    "tips": "Aktywne odpychanie ziemi od siebie – barki wciśnięte w uszy, łokcie zablokowane na 100%, żebra schowane, a biodra dokładnie nad barkami.",
-    "unlock_criteria": "3–4 serie po 30–45 sekund stabilnego trzymania bez uginania łokci."
+    "equipment": ["Podłoga", "Mata"],
+    "tips": "Podwiń miednicę (tyłopochylenie) i maksymalnie wypchnij łopatki do góry (protrakcja).",
+    "unlock_criteria": "60 sekund czystego trzymania bez opadania bioder"
   },
   {
-    "id": "chest_to_wall_handstand",
-    "name": "Chest-to-Wall Handstand",
+    "id": "planche_leans",
+    "name": "Planche Leans",
+    "tier": 1,
+    "prerequisites": ["plank"],
+    "equipment": ["Podłoga", "Paraletki"],
+    "tips": "Wychylaj barki mocno w przód, dłonie skieruj lekko na zewnątrz. Ramiona zablokowane.",
+    "unlock_criteria": "5 serii po 10 sekund mocnego wychylenia"
+  },
+  {
+    "id": "tuck_planche",
+    "name": "Tuck Planche",
     "tier": 2,
-    "prerequisites": ["box_pike_hold"],
-    "equipment": ["Ściana"],
-    "tips": "Ściany dotykają tylko czubki palców stóp. Zachowaj pozycję Hollow Body (podwinięta miednica, spięty brzuch i pośladki) i wbijaj palce dłoni jak szpony w podłogę.",
-    "unlock_criteria": "45–60 sekund czystego trzymania w idealnym pionie."
+    "prerequisites": ["planche_leans"],
+    "equipment": ["Podłoga", "Paraletki"],
+    "tips": "Oderwij nogi od ziemi z pomocą balansu, kolana blisko klatki piersiowej.",
+    "unlock_criteria": "15 sekund solidnego trzymania z zablokowanymi łokciami"
   },
   {
-    "id": "handstand_balance_drills",
-    "name": "Przejście do balansu (Toe Pulls & Kick-ups)",
+    "id": "advanced_tuck_planche",
+    "name": "Advanced Tuck Planche",
     "tier": 3,
-    "prerequisites": ["chest_to_wall_handstand"],
-    "equipment": ["Ściana"],
-    "tips": "Równowagę kontrolują dłonie: gdy lecisz na plecy, mocno wciśnij opuszki palców w ziemię; gdy lecisz na stopy, odpuść nacisk palców.",
-    "unlock_criteria": "Powtarzalne, kontrolowane kick-upy oraz 5–8 sekund swobodnego zawieszenia w powietrzu bez dotykania ściany."
+    "prerequisites": ["tuck_planche"],
+    "equipment": ["Podłoga", "Paraletki"],
+    "tips": "Otwórz kąt w biodrach do około 90 stopni, plecy muszą być płaskie.",
+    "unlock_criteria": "10 sekund idealnie równo"
+  },
+  {
+    "id": "straddle_planche",
+    "name": "Straddle Planche",
+    "tier": 4,
+    "prerequisites": ["advanced_tuck_planche"],
+    "equipment": ["Podłoga", "Paraletki"],
+    "tips": "Szeroki rozkrok ułatwia balans. Trzymaj pośladki w ogromnym napięciu.",
+    "unlock_criteria": "5-8 sekund czystego trzymania"
+  },
+  {
+    "id": "full_planche",
+    "name": "Full Planche",
+    "tier": 5,
+    "prerequisites": ["straddle_planche"],
+    "equipment": ["Podłoga", "Paraletki"],
+    "tips": "Złącz nogi, całe ciało sztywne jak deska. Oddychaj płytko przez brzuch.",
+    "unlock_criteria": "5 sekund pełnego skilla"
+  },
+  {
+    "id": "pseudo_planche_push_ups",
+    "name": "Pseudo Planche Push-Ups (PPPU)",
+    "tier": 3,
+    "prerequisites": ["tuck_planche"],
+    "equipment": ["Podłoga", "Paraletki"],
+    "tips": "Rób pompkę, trzymając barki maksymalnie wysunięte w przód. Łokcie wąsko.",
+    "unlock_criteria": "5 czystych powtórzeń z sekundową pauzą na dole"
+  },
+  {
+    "id": "tuck_planche_push_ups",
+    "name": "Tuck Planche Push-Ups",
+    "tier": 3,
+    "prerequisites": ["pseudo_planche_push_ups", "tuck_planche"],
+    "equipment": ["Paraletki"],
+    "tips": "Utrzymuj biodra na tej samej wysokości, ruch odbywa się z barków.",
+    "unlock_criteria": "3 do 5 pełnych powtórzeń w powietrzu"
+  },
+  {
+    "id": "straddle_planche_push_ups",
+    "name": "Straddle Planche Push-Ups",
+    "tier": 4,
+    "prerequisites": ["tuck_planche_push_ups", "straddle_planche"],
+    "equipment": ["Paraletki"],
+    "tips": "Nie pozwalaj nogom opadać w dół w dolnej fazie pompki.",
+    "unlock_criteria": "3 powtórzenia z blokadą łokci na górze"
+  },
+  {
+    "id": "full_planche_press",
+    "name": "Full Planche Press / Push-Ups",
+    "tier": 5,
+    "prerequisites": ["straddle_planche_push_ups", "full_planche"],
+    "equipment": ["Paraletki"],
+    "tips": "Najtrudniejszy ruch pchany. Wyciskaj całe ciało bez załamywania odcinka lędźwiowego.",
+    "unlock_criteria": "1 do 3 perfekcyjnych powtórzeń"
+  },
+  {
+    "id": "scapular_pull_ups",
+    "name": "Scapular Pull-ups",
+    "tier": 1,
+    "prerequisites": [],
+    "equipment": ["Drążek"],
+    "tips": "Zwisy z samą pracą łopatek - dół i tył. Ramiona cały czas proste.",
+    "unlock_criteria": "3 serie po 10 kontrolowanych ruchów"
+  },
+  {
+    "id": "hollow_body_hold",
+    "name": "Hollow Body Hold",
+    "tier": 1,
+    "prerequisites": [],
+    "equipment": ["Podłoga", "Mata"],
+    "tips": "Wciśnij lędźwie w matę, stopy i barki uniesione. Ciało kształtem przypomina łódkę.",
+    "unlock_criteria": "60 sekund nienagannego trzymania"
+  },
+  {
+    "id": "australian_pull_ups",
+    "name": "Podciąganie Australijskie",
+    "tier": 1,
+    "prerequisites": ["scapular_pull_ups"],
+    "equipment": ["Drążek", "Kółka gimnastyczne"],
+    "tips": "Ciało w linii prostej, dociągaj klatkę do drążka. Łokcie blisko tułowia.",
+    "unlock_criteria": "15 perfekcyjnych powtórzeń z prostymi nogami"
+  },
+  {
+    "id": "tuck_front_lever",
+    "name": "Tuck Front Lever",
+    "tier": 2,
+    "prerequisites": ["hollow_body_hold", "australian_pull_ups"],
+    "equipment": ["Drążek"],
+    "tips": "Zwis w poziomie, plecy zaokrąglone, kolana przytulone do klatki.",
+    "unlock_criteria": "20 sekund luźnego trzymania"
+  },
+  {
+    "id": "advanced_tuck_front_lever",
+    "name": "Advanced Tuck Front Lever",
+    "tier": 3,
+    "prerequisites": ["tuck_front_lever"],
+    "equipment": ["Drążek"],
+    "tips": "Wyprostuj plecy i zablokuj biodra pod kątem 90 stopni względem tułowia.",
+    "unlock_criteria": "15 sekund trzymania bez opadania bioder"
+  },
+  {
+    "id": "straddle_front_lever",
+    "name": "Straddle Front Lever",
+    "tier": 4,
+    "prerequisites": ["advanced_tuck_front_lever"],
+    "equipment": ["Drążek"],
+    "tips": "Nogi szeroko by zmniejszyć dźwignię. Pchaj drążek w dół prostymi ramionami.",
+    "unlock_criteria": "10 sekund z wyprostowanym ciałem"
+  },
+  {
+    "id": "full_front_lever",
+    "name": "Full Front Lever",
+    "tier": 5,
+    "prerequisites": ["straddle_front_lever"],
+    "equipment": ["Drążek"],
+    "tips": "Nogi złączone, całe ciało poziomo do ziemi. Zablokowane ramiona.",
+    "unlock_criteria": "5 sekund idealnego trzymania (Elite)"
+  },
+  {
+    "id": "ice_cream_makers",
+    "name": "Ice Cream Makers",
+    "tier": 3,
+    "prerequisites": ["tuck_front_lever"],
+    "equipment": ["Drążek"],
+    "tips": "Przejście z podciągnięcia brodą nad drążek do opuszczenia ciała do poziomu Front Levera (lub Tucka).",
+    "unlock_criteria": "5 płynnych przejść"
+  },
+  {
+    "id": "tuck_front_lever_pull_ups",
+    "name": "Tuck Front Lever Pull-Ups",
+    "tier": 4,
+    "prerequisites": ["ice_cream_makers", "advanced_tuck_front_lever"],
+    "equipment": ["Drążek"],
+    "tips": "Ciągnij drążek do pępka, utrzymując biodra w poziomie.",
+    "unlock_criteria": "5 czystych powtórzeń w pozycji Advanced Tuck"
+  },
+  {
+    "id": "full_front_lever_pull_ups",
+    "name": "Full Front Lever Pull-Ups",
+    "tier": 5,
+    "prerequisites": ["tuck_front_lever_pull_ups", "full_front_lever"],
+    "equipment": ["Drążek"],
+    "tips": "Gigantyczny sprawdzian najszerszych grzbietu. Ruch przypomina wiosłowanie całym ciałem.",
+    "unlock_criteria": "2 czyste pociągnięcia z pauzą w poziomie"
+  },
+  {
+    "id": "pike_hold",
+    "name": "Pike Hold",
+    "tier": 1,
+    "prerequisites": ["plank"],
+    "equipment": ["Podłoga"],
+    "tips": "Ciało przypomina odwrócone V. Ciężar mocno na barkach, dłonie pod barkami.",
+    "unlock_criteria": "45 sekund stabilnej pozycji"
+  },
+  {
+    "id": "wall_walk",
+    "name": "Wall Walk (Wejście po ścianie)",
+    "tier": 1,
+    "prerequisites": ["pike_hold"],
+    "equipment": ["Podłoga", "Ściana"],
+    "tips": "Wchodź nogami na ścianę tyłem, dochodząc klatką jak najbliżej ściany.",
+    "unlock_criteria": "3 kontrolowane wejścia i zejścia"
+  },
+  {
+    "id": "handstand_stomach_to_wall",
+    "name": "Handstand (Brzuch do ściany)",
+    "tier": 2,
+    "prerequisites": ["wall_walk", "hollow_body_hold"],
+    "equipment": ["Podłoga", "Ściana"],
+    "tips": "Stopy dotykają ściany, reszta ciała w linii. Patrz między dłonie, pchaj mocno z barków.",
+    "unlock_criteria": "60 sekund trzymania w prostej linii"
   },
   {
     "id": "freestanding_handstand",
-    "name": "Freestanding Handstand",
+    "name": "Wolnostojący Handstand",
+    "tier": 3,
+    "prerequisites": ["handstand_stomach_to_wall"],
+    "equipment": ["Podłoga", "Paraletki"],
+    "tips": "Balansuj naciskając palcami na podłoże. Trzymaj złączone nogi i usztywniony brzuch.",
+    "unlock_criteria": "15 sekund samodzielnego balansu"
+  },
+  {
+    "id": "clean_handstand",
+    "name": "Czysty Handstand",
     "tier": 4,
-    "prerequisites": ["handstand_balance_drills"],
-    "equipment": ["Brak sprzętu"],
-    "tips": "Opanuj bezpieczne wyjście przez piruet przed próbami na środku. Trzymaj pełną elewację barków, zablokowane łokcie, spięte całe ciało i ciągłą mikrokorektę palcami.",
-    "unlock_criteria": "10–20 sekund stabilnego stania w 4 na 5 prób."
+    "prerequisites": ["freestanding_handstand"],
+    "equipment": ["Podłoga", "Paraletki"],
+    "tips": "Perfekcyjna prosta linia, brak chodzenia na rękach, pełna kontrola.",
+    "unlock_criteria": "30+ sekund w jednej, stabilnej pozycji"
+  },
+  {
+    "id": "one_arm_handstand",
+    "name": "One-Arm Handstand (OAH)",
+    "tier": 5,
+    "prerequisites": ["clean_handstand"],
+    "equipment": ["Podłoga", "Paraletki"],
+    "tips": "Wymaga przeniesienia całego środka ciężkości nad jedną dłoń i zablokowania tułowia.",
+    "unlock_criteria": "5 sekund swobodnego trzymania jednorącz"
+  },
+  {
+    "id": "wall_hspu",
+    "name": "Wall Handstand Push-Up",
+    "tier": 3,
+    "prerequisites": ["handstand_stomach_to_wall", "pike_hold"],
+    "equipment": ["Podłoga", "Ściana"],
+    "tips": "Ruch przypomina trójkąt – głowa ląduje przed dłońmi, a nie w linii między nimi.",
+    "unlock_criteria": "5 czystych powtórzeń przy ścianie (brzuchem lub plecami do ściany)"
+  },
+  {
+    "id": "freestanding_hspu",
+    "name": "Wolnostojące HSPU",
+    "tier": 4,
+    "prerequisites": ["wall_hspu", "freestanding_handstand"],
+    "equipment": ["Podłoga", "Paraletki"],
+    "tips": "Balansuj palcami podczas schodzenia w dół. Pchaj mocno w górę od samego dołu.",
+    "unlock_criteria": "3 powtórzenia z pełnym wyprostem bez utraty równowagi"
+  },
+  {
+    "id": "press_to_handstand",
+    "name": "Press to Handstand",
+    "tier": 5,
+    "prerequisites": ["freestanding_hspu"],
+    "equipment": ["Podłoga", "Paraletki"],
+    "tips": "Wejście siłowe np. z rozkroku lub L-sita. Wymaga ekstremalnej kompresji i siły przednich aktonów.",
+    "unlock_criteria": "1 płynne, powolne wejście z ziemi do stania"
+  },
+  {
+    "id": "pull_ups",
+    "name": "Podciąganie Nachwytem",
+    "tier": 1,
+    "prerequisites": ["scapular_pull_ups"],
+    "equipment": ["Drążek"],
+    "tips": "Ciągnij do momentu aż broda przekroczy drążek. Kontroluj opuszczanie.",
+    "unlock_criteria": "15 czystych powtórzeń w serii"
+  },
+  {
+    "id": "straight_bar_dips",
+    "name": "Dipy na drążku prostym",
+    "tier": 1,
+    "prerequisites": [],
+    "equipment": ["Drążek"],
+    "tips": "Klatka nad drążkiem, łokcie ugięte do 90 stopni, pchasz w górę aż do zablokowania łokci.",
+    "unlock_criteria": "15 czystych dipów"
+  },
+  {
+    "id": "jumping_muscle_up",
+    "name": "Jumping Muscle-Up / Negatywy",
+    "tier": 2,
+    "prerequisites": ["pull_ups", "straight_bar_dips"],
+    "equipment": ["Drążek"],
+    "tips": "Wskocz nad drążek i ćwicz powolne, kontrolowane opuszczanie (fazę negatywną przejścia).",
+    "unlock_criteria": "5 płynnych negatywów po 5 sekund każdy"
+  },
+  {
+    "id": "banded_muscle_up",
+    "name": "Muscle-Up z Gumą (Kipping)",
+    "tier": 3,
+    "prerequisites": ["jumping_muscle_up"],
+    "equipment": ["Drążek", "Guma Oporowa"],
+    "tips": "Zgraj moment wymachu bioder z silnym ciągnięciem drążka w dół pod klatkę.",
+    "unlock_criteria": "3 powtórzenia na cienkiej gumie"
+  },
+  {
+    "id": "kipping_muscle_up",
+    "name": "Kipping Muscle-Up",
+    "tier": 4,
+    "prerequisites": ["banded_muscle_up"],
+    "equipment": ["Drążek"],
+    "tips": "Dynamiczny rzut nóg do przodu pomaga przełamać najcięższy martwy punkt (przejście).",
+    "unlock_criteria": "3-5 dynamicznych wejść pod rząd"
+  },
+  {
+    "id": "strict_false_grip_pull_ups",
+    "name": "Strict False Grip Pull-ups",
+    "tier": 3,
+    "prerequisites": ["jumping_muscle_up"],
+    "equipment": ["Drążek", "Kółka gimnastyczne"],
+    "tips": "Użyj chwytu małpiego (nadgarstek wyżej). Podciągaj się powoli jak najniżej do mostka.",
+    "unlock_criteria": "5 powtórzeń do klatki w False Grip"
+  },
+  {
+    "id": "strict_muscle_up",
+    "name": "Strict Muscle-Up",
+    "tier": 4,
+    "prerequisites": ["strict_false_grip_pull_ups"],
+    "equipment": ["Drążek", "Kółka gimnastyczne"],
+    "tips": "Brak zamachu nogami (kippingu). Czysta siła ciągnąca, agresywne przejście i wypchnięcie.",
+    "unlock_criteria": "1-3 perfekcyjnych siłowych wejść"
+  },
+  {
+    "id": "slow_muscle_up",
+    "name": "Slow Muscle-Up",
+    "tier": 5,
+    "prerequisites": ["strict_muscle_up"],
+    "equipment": ["Kółka gimnastyczne", "Drążek"],
+    "tips": "Ruch wykonywany celowo ultra-powoli, co testuje absolutną kontrolę nad dźwignią przejściową.",
+    "unlock_criteria": "1 wejście bez momentu bezwładności"
+  },
+  {
+    "id": "german_hang",
+    "name": "German Hang",
+    "tier": 1,
+    "prerequisites": [],
+    "equipment": ["Drążek"],
+    "tips": "Zwis na drążku ze spuszczonymi rękami za plecami. Otwiera i rozciąga barki.",
+    "unlock_criteria": "30 sekund komfortowego zwisu"
+  },
+  {
+    "id": "skin_the_cat",
+    "name": "Skin the Cat",
+    "tier": 1,
+    "prerequisites": ["german_hang"],
+    "equipment": ["Drążek"],
+    "tips": "Obrót całego ciała na drążku przez kuczkę do German Hanga i z powrotem.",
+    "unlock_criteria": "5 płynnych przewrotów"
+  },
+  {
+    "id": "tuck_back_lever",
+    "name": "Tuck Back Lever",
+    "tier": 2,
+    "prerequisites": ["skin_the_cat"],
+    "equipment": ["Drążek"],
+    "tips": "Kuczka tyłem do ziemi. Barki muszą być zaangażowane, dłonie pchają drążek.",
+    "unlock_criteria": "20 sekund stabilnego trzymania"
+  },
+  {
+    "id": "advanced_tuck_back_lever",
+    "name": "Advanced Tuck Back Lever",
+    "tier": 3,
+    "prerequisites": ["tuck_back_lever"],
+    "equipment": ["Drążek"],
+    "tips": "Wyprostuj plecy. Biceps jest bardzo mocno obciążony - trzymaj ramiona absolutnie proste.",
+    "unlock_criteria": "15 sekund"
+  },
+  {
+    "id": "full_back_lever",
+    "name": "Full Back Lever",
+    "tier": 4,
+    "prerequisites": ["advanced_tuck_back_lever"],
+    "equipment": ["Drążek"],
+    "tips": "Złączone, proste nogi. Całe ciało poziomo do ziemi, patrz lekko w górę (przed siebie).",
+    "unlock_criteria": "10 sekund pełnego poziomu"
+  },
+  {
+    "id": "back_lever_raises",
+    "name": "Back Lever Raises",
+    "tier": 3,
+    "prerequisites": ["tuck_back_lever"],
+    "equipment": ["Drążek"],
+    "tips": "Opuszczanie ciała ze zwisu pionowego w dół do poziomu i podciąganie z powrotem.",
+    "unlock_criteria": "5 płynnych opuszczeń i powrotów w pozycji Advanced Tuck"
+  },
+  {
+    "id": "back_lever_pull_outs",
+    "name": "Back Lever Pull-outs (Pelican)",
+    "tier": 5,
+    "prerequisites": ["back_lever_raises", "full_back_lever"],
+    "equipment": ["Drążek", "Kółka gimnastyczne"],
+    "tips": "Powrót całym, prostym ciałem z głębokiego German Hanga lub poziomu do wagi przodem.",
+    "unlock_criteria": "3 powtórzenia z poziomu w górę"
+  },
+  {
+    "id": "support_hold",
+    "name": "Support Hold na poręczach",
+    "tier": 1,
+    "prerequisites": [],
+    "equipment": ["Poręcze do dipów", "Paraletki"],
+    "tips": "Pchaj barki maksymalnie w dół (depresja). Łokcie zablokowane.",
+    "unlock_criteria": "60 sekund solidnego wsparcia"
+  },
+  {
+    "id": "hanging_knee_raises",
+    "name": "Unoszenie kolan w zwisie",
+    "tier": 1,
+    "prerequisites": [],
+    "equipment": ["Drążek"],
+    "tips": "Używaj brzucha do podnoszenia kolan do klatki piersiowej. Unikaj bujania.",
+    "unlock_criteria": "15 kontrolowanych powtórzeń"
+  },
+  {
+    "id": "tuck_l_sit",
+    "name": "Tuck L-Sit",
+    "tier": 2,
+    "prerequisites": ["support_hold", "hanging_knee_raises"],
+    "equipment": ["Poręcze do dipów", "Paraletki", "Podłoga"],
+    "tips": "Kolana ugięte na wysokości bioder, pchaj rękami mocno w dół.",
+    "unlock_criteria": "20 sekund"
+  },
+  {
+    "id": "one_leg_l_sit",
+    "name": "One-Leg L-Sit",
+    "tier": 3,
+    "prerequisites": ["tuck_l_sit"],
+    "equipment": ["Poręcze do dipów", "Paraletki", "Podłoga"],
+    "tips": "Z Tucka wyprostuj jedną nogę. Zmieniaj nogi w trakcie lub co serię.",
+    "unlock_criteria": "10 sekund na każdą nogę"
+  },
+  {
+    "id": "full_l_sit",
+    "name": "Pełny L-Sit",
+    "tier": 4,
+    "prerequisites": ["one_leg_l_sit"],
+    "equipment": ["Poręcze do dipów", "Paraletki", "Podłoga"],
+    "tips": "Nogi perfekcyjnie proste, równolegle do ziemi. Zablokowane łokcie, palce obciągnięte.",
+    "unlock_criteria": "15 sekund w pełnym zablokowaniu"
+  },
+  {
+    "id": "v_sit",
+    "name": "V-Sit / Manna",
+    "tier": 5,
+    "prerequisites": ["full_l_sit"],
+    "equipment": ["Poręcze do dipów", "Paraletki", "Podłoga"],
+    "tips": "Wymaga ogromnej kompresji. Podnoś nogi powyżej poziomu pasa - im wyżej (kształt V), tym trudniej.",
+    "unlock_criteria": "5 sekund czystego V-sita (nogi na wysokości twarzy)"
+  },
+  {
+    "id": "l_sit_raises",
+    "name": "Wznosy nóg z podporu",
+    "tier": 3,
+    "prerequisites": ["tuck_l_sit"],
+    "equipment": ["Poręcze do dipów", "Paraletki", "Podłoga"],
+    "tips": "Z oparcia dynamicznie unosz proste nogi do poziomu i wolno opuszczaj.",
+    "unlock_criteria": "10 powtórzeń bez dotykania podłogi"
+  },
+  {
+    "id": "l_sit_to_handstand",
+    "name": "L-Sit to Handstand Press",
+    "tier": 5,
+    "prerequisites": ["v_sit", "press_to_handstand"],
+    "equipment": ["Paraletki"],
+    "tips": "Płynne przejście z L-Sita siłą barków i brzucha prosto do stania na rękach.",
+    "unlock_criteria": "1 płynne przejście w górę"
+  },
+  {
+    "id": "deep_squat",
+    "name": "Pełny Głęboki Przysiad",
+    "tier": 1,
+    "prerequisites": [],
+    "equipment": ["Podłoga"],
+    "tips": "Pełen zakres ruchu - biodra schodzą poniżej kolan (Ass to grass).",
+    "unlock_criteria": "30 powtórzeń obunóż w tempie"
+  },
+  {
+    "id": "cossack_squats",
+    "name": "Przysiady Kozackie",
+    "tier": 1,
+    "prerequisites": ["deep_squat"],
+    "equipment": ["Podłoga"],
+    "tips": "Wymaga doskonałej mobilności bioder i kostek. Schodź na jedną nogę z drugą wyciągniętą w bok.",
+    "unlock_criteria": "10 powtórzeń na nogę"
+  },
+  {
+    "id": "assisted_pistol_squat",
+    "name": "Assisted Pistol Squat",
+    "tier": 2,
+    "prerequisites": ["cossack_squats"],
+    "equipment": ["Podłoga", "Guma Oporowa"],
+    "tips": "Trzymaj się futryny drzwi, TRX-a lub gumy. Ćwicz wzorzec równowagi jednonóż.",
+    "unlock_criteria": "8 powtórzeń na nogę z lekką asystą"
+  },
+  {
+    "id": "pistol_squat_negatives",
+    "name": "Pistol Squat (Negatywy)",
+    "tier": 3,
+    "prerequisites": ["assisted_pistol_squat"],
+    "equipment": ["Podłoga"],
+    "tips": "Schodzisz powoli (ok. 5s) w dół na jednej nodze, ale wstajesz używając obu.",
+    "unlock_criteria": "5 czystych negatywów na każdą nogę"
+  },
+  {
+    "id": "full_pistol_squat",
+    "name": "Full Pistol Squat",
+    "tier": 4,
+    "prerequisites": ["pistol_squat_negatives"],
+    "equipment": ["Podłoga"],
+    "tips": "Ramiona w przód dla balansu, pełna głębokość przysiadu, płynne wstanie na jednej nodze.",
+    "unlock_criteria": "5 powtórzeń (z rzędu) na każdą nogę"
+  },
+  {
+    "id": "weighted_pistol_squat",
+    "name": "Pistol Squat z obciążeniem",
+    "tier": 4,
+    "prerequisites": ["full_pistol_squat"],
+    "equipment": ["Podłoga"],
+    "tips": "Lekkie obciążenie przed klatką (np. 5 kg) może o dziwo pomóc z balansem, ale mocniej pali udo.",
+    "unlock_criteria": "5 powtórzeń z kettlebellem/hantlem (+10kg)"
+  },
+  {
+    "id": "shrimp_squat",
+    "name": "Shrimp Squat",
+    "tier": 5,
+    "prerequisites": ["full_pistol_squat"],
+    "equipment": ["Podłoga"],
+    "tips": "Trudniejszy balans - jedną nogę uginasz do tyłu. Z kolanem tylnej nogi lekko dotykasz podłoża.",
+    "unlock_criteria": "3 powtórzenia na nogę bez podpórki"
+  },
+  {
+    "id": "side_plank",
+    "name": "Side Plank (Deska bokiem)",
+    "tier": 1,
+    "prerequisites": ["plank"],
+    "equipment": ["Podłoga", "Mata"],
+    "tips": "Ciało w idealnie prostej linii od stóp do czubka głowy, biodra uniesione.",
+    "unlock_criteria": "60 sekund na każdą stronę"
+  },
+  {
+    "id": "tuck_flag",
+    "name": "Tuck Flag / Vertical Flag (Świeca)",
+    "tier": 2,
+    "prerequisites": ["side_plank", "pull_ups"],
+    "equipment": ["Drabinka", "Rurka pionowa"],
+    "tips": "Dolna ręka mocno odpycha rurkę, górna przyciąga. Ciało uniesione z mocno podciągniętymi kolanami.",
+    "unlock_criteria": "15 sekund stabilnego trzymania w kuczce"
+  },
+  {
+    "id": "advanced_tuck_flag",
+    "name": "Advanced Tuck / Straddle Flag",
+    "tier": 3,
+    "prerequisites": ["tuck_flag"],
+    "equipment": ["Drabinka", "Rurka pionowa"],
+    "tips": "Szeroki rozkrok obniża moment siły. Walka ze skrętem tułowia wokół osi (antyrotacja).",
+    "unlock_criteria": "10 sekund w rozkroku na każdą stronę"
+  },
+  {
+    "id": "full_human_flag",
+    "name": "Full Human Flag",
+    "tier": 4,
+    "prerequisites": ["advanced_tuck_flag"],
+    "equipment": ["Drabinka", "Rurka pionowa"],
+    "tips": "Złączone nogi, ciało całkowicie horyzontalnie. Cały napięty boczny core trzyma masę na barkach.",
+    "unlock_criteria": "5-8 sekund czystej poziomej formy"
+  },
+  {
+    "id": "x_flag",
+    "name": "X-Flag",
+    "tier": 5,
+    "prerequisites": ["full_human_flag"],
+    "equipment": ["Drabinka", "Rurka pionowa"],
+    "tips": "Chwyt ze skrzyżowanymi ramionami potęgujący niestabilność i wymagania dla przedramion.",
+    "unlock_criteria": "5 sekund trzymania"
+  },
+  {
+    "id": "flag_negatives",
+    "name": "Human Flag Negatives",
+    "tier": 3,
+    "prerequisites": ["tuck_flag"],
+    "equipment": ["Drabinka", "Rurka pionowa"],
+    "tips": "Wybij się do stania na rękach z boku rurki (świecy) i powoli opuszczaj proste ciało do poziomu.",
+    "unlock_criteria": "5 powolnych opuszczeń z kontrolą na każdej stronie"
+  },
+  {
+    "id": "flag_raises",
+    "name": "Human Flag Raises",
+    "tier": 4,
+    "prerequisites": ["flag_negatives"],
+    "equipment": ["Drabinka", "Rurka pionowa"],
+    "tips": "Mocny wymach ze złączonych stóp (z ziemi) prosto do flagi bez momentu zatrzymania w powietrzu.",
+    "unlock_criteria": "3 wznosy prosto do pełnej formy"
+  },
+  {
+    "id": "human_flag_pull_ups",
+    "name": "Human Flag Pull-Ups",
+    "tier": 5,
+    "prerequisites": ["full_human_flag"],
+    "equipment": ["Drabinka", "Rurka pionowa"],
+    "tips": "Podciąganie samego siebie (przyciąganie ciała do drążka) w pełni ukształtowanej fladze.",
+    "unlock_criteria": "2-3 czyste pompko-podciągnięcia w poziomie"
+  },
+  {
+    "id": "active_one_arm_hang",
+    "name": "Active One-Arm Hang",
+    "tier": 1,
+    "prerequisites": ["scapular_pull_ups"],
+    "equipment": ["Drążek"],
+    "tips": "Zwis jednorącz z maksymalnie ściągniętą i opuszczoną łopatką. Zapobiegaj 'kręceniu się'.",
+    "unlock_criteria": "30 sekund na każdą rękę"
+  },
+  {
+    "id": "weighted_pull_ups",
+    "name": "Weighted Pull-Ups",
+    "tier": 2,
+    "prerequisites": ["pull_ups"],
+    "equipment": ["Drążek"],
+    "tips": "Podciąganie obunóż z dodatkowym ciężarem by zbudować czystą siłę mechaniczną.",
+    "unlock_criteria": "5 powtórzeń z obciążeniem równym +30%/40% wagi ciała (ok. +20-30 kg)"
+  },
+  {
+    "id": "top_lock_off",
+    "name": "Top Lock-off",
+    "tier": 3,
+    "prerequisites": ["active_one_arm_hang", "weighted_pull_ups"],
+    "equipment": ["Drążek"],
+    "tips": "Podciągnij się dwoma rękami, zablokuj brodę nad drążkiem, puść jedną dłoń i utrzymaj pozycję.",
+    "unlock_criteria": "10 sekund napięcia izometrycznego na górze (na rękę)"
+  },
+  {
+    "id": "90_degree_lock_off",
+    "name": "90-Degree Lock-off",
+    "tier": 4,
+    "prerequisites": ["top_lock_off"],
+    "equipment": ["Drążek"],
+    "tips": "Trzymaj ciało w zwisie jednorącz przy łokciu zgiętym na 90 stopni (najdłuższa dźwignia bicepsem).",
+    "unlock_criteria": "10 sekund bez opadania"
+  },
+  {
+    "id": "one_arm_negatives",
+    "name": "One-Arm Negatives",
+    "tier": 5,
+    "prerequisites": ["90_degree_lock_off"],
+    "equipment": ["Drążek"],
+    "tips": "Opadanie od brody do pełnego zwisu na jednej ręce. Walcz z grawitacją przez minimum 8 sekund.",
+    "unlock_criteria": "3 płynne powtórzenia (8-10 sekund każde opadanie)"
+  },
+  {
+    "id": "archer_pull_ups",
+    "name": "Archer Pull-Ups (Podciąganie Łucznika)",
+    "tier": 3,
+    "prerequisites": ["weighted_pull_ups"],
+    "equipment": ["Drążek", "Kółka gimnastyczne"],
+    "tips": "Jedna ręka ciągnie w dół (zgięta), druga odpycha drążek do boku (prosta).",
+    "unlock_criteria": "5 powtórzeń na stronę"
+  },
+  {
+    "id": "assisted_oapu",
+    "name": "Assisted One-Arm Pull-Up",
+    "tier": 4,
+    "prerequisites": ["archer_pull_ups"],
+    "equipment": ["Drążek", "Guma Oporowa"],
+    "tips": "Podciągasz się jednorącz, podczas gdy druga ręka trzyma cienką gumę oporową lub 1 palec na nadgarstku.",
+    "unlock_criteria": "3 powtórzenia do brody na minimalnej asyście"
+  },
+  {
+    "id": "strict_oapu",
+    "name": "Strict One-Arm Pull-Up",
+    "tier": 5,
+    "prerequisites": ["assisted_oapu", "one_arm_negatives"],
+    "equipment": ["Drążek"],
+    "tips": "Całe napięcie zaczyna się z łopatki, następnie włącza się ramię. Bez zamachu z nóg.",
+    "unlock_criteria": "1 czyste pociągnięcie na każdej ze stron"
+  },
+  {
+    "id": "lying_leg_raises",
+    "name": "Lying Leg Raises (Wznosy nóg leżąc)",
+    "tier": 1,
+    "prerequisites": ["hollow_body_hold"],
+    "equipment": ["Podłoga", "Mata"],
+    "tips": "Lędźwia całkowicie wklejone w matę, praca wykonuje się brzuchem, a nie rozpędem miednicy.",
+    "unlock_criteria": "20 wolnych, kontrolowanych powtórzeń"
+  },
+  {
+    "id": "toes_to_bar",
+    "name": "Toes to Bar (Stopy do drążka)",
+    "tier": 1,
+    "prerequisites": ["hanging_knee_raises"],
+    "equipment": ["Drążek"],
+    "tips": "Ze zwisu na prostych ramionach unieś stopy aż dotkną drążka (bez bujania ciałem).",
+    "unlock_criteria": "10 płynnych wznosów z rzędu"
+  },
+  {
+    "id": "tuck_dragon_flag",
+    "name": "Tuck Dragon Flag",
+    "tier": 2,
+    "prerequisites": ["lying_leg_raises", "toes_to_bar"],
+    "equipment": ["Podłoga", "Mata"],
+    "tips": "Złap drabinkę za głową, ciężar oparty tylko na górze pleców. Kolana zgięte do klatki.",
+    "unlock_criteria": "15 sekund statycznego trzymania bez dotykania miednicą maty"
+  },
+  {
+    "id": "advanced_tuck_dragon_flag",
+    "name": "Advanced Tuck Dragon Flag",
+    "tier": 3,
+    "prerequisites": ["tuck_dragon_flag"],
+    "equipment": ["Podłoga", "Mata"],
+    "tips": "Wyprostuj plecy i zablokuj kolana w kącie prostym. Napnij najszerszy grzbietu.",
+    "unlock_criteria": "10 sekund z perfekcyjnie prostymi plecami"
+  },
+  {
+    "id": "full_dragon_flag",
+    "name": "Full Dragon Flag Hold",
+    "tier": 4,
+    "prerequisites": ["advanced_tuck_dragon_flag"],
+    "equipment": ["Podłoga", "Mata"],
+    "tips": "Idealnie prosta deska od barków aż po palce u stóp. Nie łam sylwetki w biodrach.",
+    "unlock_criteria": "10 sekund bez opadnięcia z pośladkami"
+  },
+  {
+    "id": "dragon_flag_pole",
+    "name": "Dragon Flag na rurce pionowej",
+    "tier": 5,
+    "prerequisites": ["full_dragon_flag"],
+    "equipment": ["Rurka pionowa"],
+    "tips": "Brak podparcia dla karku - musisz się trzymać wyłącznie rękami na rurce i stabilizować kark.",
+    "unlock_criteria": "5 sekund trzymania"
+  },
+  {
+    "id": "dragon_flag_negatives",
+    "name": "Dragon Flag Negatives",
+    "tier": 3,
+    "prerequisites": ["tuck_dragon_flag"],
+    "equipment": ["Podłoga", "Mata"],
+    "tips": "Od wypchnięcia nóg mocno w górę (świeca) zacznij bardzo powolne opuszczanie zablokowanych nóg.",
+    "unlock_criteria": "5 kontrolowanych opuszczeń (ok. 5 sekund każde)"
+  },
+  {
+    "id": "dragon_flag_raises",
+    "name": "Dragon Flag Raises",
+    "tier": 4,
+    "prerequisites": ["dragon_flag_negatives"],
+    "equipment": ["Podłoga", "Mata"],
+    "tips": "Podnoś całkowicie sztywne, wyprostowane ciało z poziomu ziemi do świecy pionowej.",
+    "unlock_criteria": "3-5 dynamicznych podniesień"
+  },
+  {
+    "id": "dragon_flag_flutters",
+    "name": "Dragon Flag Flutters (Nożyce w powietrzu)",
+    "tier": 5,
+    "prerequisites": ["dragon_flag_raises", "full_dragon_flag"],
+    "equipment": ["Podłoga", "Mata"],
+    "tips": "Utrzymuj biodra zawieszone, robiąc nogami symulację nożyc góra-dół w poziomie.",
+    "unlock_criteria": "10 pełnych ruchów (nożyc) zachowując równowagę"
+  },
+  {
+    "id": "diamond_push_ups",
+    "name": "Pompki Diamentowe",
+    "tier": 1,
+    "prerequisites": ["plank"],
+    "equipment": ["Podłoga", "Mata"],
+    "tips": "Dłonie połączone pod mostkiem by triceps przejął absolutną kontrolę nad wypchnięciem.",
+    "unlock_criteria": "20 czystych powtórzeń z rzędu"
+  },
+  {
+    "id": "one_arm_plank",
+    "name": "One-Arm Plank (Deska Jednorącz)",
+    "tier": 1,
+    "prerequisites": ["plank"],
+    "equipment": ["Podłoga", "Mata"],
+    "tips": "Zablokuj rozjeżdżanie się bioder na boki. Wymaga ogromnego dopięcia całego core (antyrotacja).",
+    "unlock_criteria": "30 sekund stabilnie na każdą ze stron"
+  },
+  {
+    "id": "archer_push_ups",
+    "name": "Archer Push-Ups (Pompki Łucznika)",
+    "tier": 2,
+    "prerequisites": ["diamond_push_ups", "one_arm_plank"],
+    "equipment": ["Podłoga", "Mata"],
+    "tips": "Schodząc w dół uginasz jedno ramię do klatki, a drugie zostaje niemal całkowicie wyprostowane z boku.",
+    "unlock_criteria": "8 powtórzeń na każdą stronę w pełnej amplitudzie"
+  },
+  {
+    "id": "incline_one_arm_plank",
+    "name": "Incline One-Arm Plank",
+    "tier": 3,
+    "prerequisites": ["one_arm_plank"],
+    "equipment": ["Skrzynia", "Ławka"],
+    "tips": "Wchodzisz na wyższy poziom antyrotacji ze względu na zmniejszoną powierzchnię podparcia.",
+    "unlock_criteria": "20 sekund na rękę bez rotacji bioder"
+  },
+  {
+    "id": "one_arm_push_up_negatives",
+    "name": "One-Arm Push-Up Negatives",
+    "tier": 4,
+    "prerequisites": ["incline_one_arm_plank", "archer_push_ups"],
+    "equipment": ["Podłoga"],
+    "tips": "Wolno i bardzo stabilnie obniżasz sam siebie, nie pozwalając by miednica 'klapnęła' przed klatką.",
+    "unlock_criteria": "5 powolnych opuszczeń z kontrolą sylwetki na rękę"
+  },
+  {
+    "id": "bottom_hold_oapu",
+    "name": "Bottom Hold One-Arm Push-Up",
+    "tier": 5,
+    "prerequisites": ["one_arm_push_up_negatives"],
+    "equipment": ["Podłoga"],
+    "tips": "Zejdź do najniższego punktu przy samej ziemi na jednej ręce i zablokuj spadek siłą woli i tricepsa.",
+    "unlock_criteria": "5 sekund trzymania przy samej podłodze"
+  },
+  {
+    "id": "incline_oapu",
+    "name": "Incline One-Arm Push-Up (Pompka o podwyższenie)",
+    "tier": 3,
+    "prerequisites": ["archer_push_ups"],
+    "equipment": ["Skrzynia", "Ławka"],
+    "tips": "Wykonuj pełną pompkę trzymając dłoń wyżej niż stopy, im wyżej tym łatwiej. Wąski rozkrok nóg.",
+    "unlock_criteria": "5 czystych pompek z podparciem o krzesło/ławkę"
+  },
+  {
+    "id": "straddle_oapu",
+    "name": "Straddle One-Arm Push-Up (W szerokim rozkroku)",
+    "tier": 4,
+    "prerequisites": ["incline_oapu", "one_arm_push_up_negatives"],
+    "equipment": ["Podłoga"],
+    "tips": "Rozkrok poszerza bazę balansu. Ręka schowana do boku (za plecami lub na udzie).",
+    "unlock_criteria": "3 powtórzenia bez wkręcania się miednicy"
+  },
+  {
+    "id": "strict_one_arm_push_up",
+    "name": "Strict One-Arm Push-Up (Wąski rozstaw nóg)",
+    "tier": 5,
+    "prerequisites": ["straddle_oapu", "bottom_hold_oapu"],
+    "equipment": ["Podłoga"],
+    "tips": "Nogi złączone. Ramiona, klatka i biodra idealnie w jednej linii prostopadle ułożone do gruntu.",
+    "unlock_criteria": "1-2 perfekcyjnie wyprowadzone powtórzenia z ziemi"
   }
 ]
