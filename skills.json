@@ -1,0 +1,77 @@
+[
+  { 
+    "id": "hanging_leg_raises", 
+    "name": "Wznosy nóg do drążka",
+    "tier": 1, 
+    "prerequisites": [], 
+    "equipment": ["Drążek"], 
+    "tips": "Unoszenie idealnie prostych nóg aż do dotknięcia drążka stopami.", 
+    "unlock_criteria": "8–10 powtórzeń w pełnej kontroli, ze spokojnym 2-sekundowym opuszczaniem nóg." 
+  },
+  { 
+    "id": "adv_tuck_front_lever", 
+    "name": "Advanced Tuck Front Lever", 
+    "tier": 2, 
+    "prerequisites": ["hanging_leg_raises"], 
+    "equipment": ["Drążek"], 
+    "tips": "Przesunięcie kolan w tył tak, aby kąt między udami a tułowiem wynosił 90°. Plecy całkowicie płaskie.", 
+    "unlock_criteria": "15–20 sekund czystego, stabilnego trzymania bez uginania łokci." 
+  },
+  { 
+    "id": "straddle_front_lever", 
+    "name": "Straddle Front Lever", 
+    "tier": 3, 
+    "prerequisites": ["adv_tuck_front_lever"], 
+    "equipment": ["Drążek"], 
+    "tips": "Obie nogi wyprostowane i szeroko rozszerzone na boki. Im szerszy rozkrok, tym środek ciężkości bliżej dłoni.", 
+    "unlock_criteria": "10–12 sekund w pozycji Straddle z biodrami w jednej linii z barkami."
+  },
+  { 
+    "id": "full_front_lever", 
+    "name": "Full Front Lever",
+    "tier": 4, 
+    "prerequisites": ["straddle_front_lever"], 
+    "equipment": ["Drążek"], 
+    "tips": "Ciało w idealnie poziomej linii równoległej do podłoża. Nogi złączone, pośladki spięte, łopatki w depresji.",
+    "unlock_criteria": "3–5 sekund kontrolowanego zatrzymania bez zapadania się bioder w dół."
+  }
+]
+
+[
+  {
+    "id": "box_pike_hold",
+    "name": "Box Pike Hold",
+    "tier": 1,
+    "prerequisites": [],
+    "equipment": ["Podwyższenie"],
+    "tips": "Aktywne odpychanie ziemi od siebie – barki wciśnięte w uszy, łokcie zablokowane na 100%, żebra schowane, a biodra dokładnie nad barkami.",
+    "unlock_criteria": "3–4 serie po 30–45 sekund stabilnego trzymania bez uginania łokci."
+  },
+  {
+    "id": "chest_to_wall_handstand",
+    "name": "Chest-to-Wall Handstand",
+    "tier": 2,
+    "prerequisites": ["box_pike_hold"],
+    "equipment": ["Ściana"],
+    "tips": "Ściany dotykają tylko czubki palców stóp. Zachowaj pozycję Hollow Body (podwinięta miednica, spięty brzuch i pośladki) i wbijaj palce dłoni jak szpony w podłogę.",
+    "unlock_criteria": "45–60 sekund czystego trzymania w idealnym pionie."
+  },
+  {
+    "id": "handstand_balance_drills",
+    "name": "Przejście do balansu (Toe Pulls & Kick-ups)",
+    "tier": 3,
+    "prerequisites": ["chest_to_wall_handstand"],
+    "equipment": ["Ściana"],
+    "tips": "Równowagę kontrolują dłonie: gdy lecisz na plecy, mocno wciśnij opuszki palców w ziemię; gdy lecisz na stopy, odpuść nacisk palców.",
+    "unlock_criteria": "Powtarzalne, kontrolowane kick-upy oraz 5–8 sekund swobodnego zawieszenia w powietrzu bez dotykania ściany."
+  },
+  {
+    "id": "freestanding_handstand",
+    "name": "Freestanding Handstand",
+    "tier": 4,
+    "prerequisites": ["handstand_balance_drills"],
+    "equipment": ["Brak sprzętu"],
+    "tips": "Opanuj bezpieczne wyjście przez piruet przed próbami na środku. Trzymaj pełną elewację barków, zablokowane łokcie, spięte całe ciało i ciągłą mikrokorektę palcami.",
+    "unlock_criteria": "10–20 sekund stabilnego stania w 4 na 5 prób."
+  }
+]
