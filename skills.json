@@ -2,6 +2,8 @@
   {
     "id": "plank",
     "name": "Plank (Deska)",
+    "skill_group": "Planche",
+    "group_difficulty_class": "S",
     "tier": 1,
     "prerequisites": [],
     "equipment": ["Podłoga", "Mata"],
@@ -11,6 +13,8 @@
   {
     "id": "planche_leans",
     "name": "Planche Leans",
+    "skill_group": "Planche",
+    "group_difficulty_class": "S",
     "tier": 1,
     "prerequisites": ["plank"],
     "equipment": ["Podłoga", "Paraletki"],
@@ -20,6 +24,8 @@
   {
     "id": "tuck_planche",
     "name": "Tuck Planche",
+    "skill_group": "Planche",
+    "group_difficulty_class": "S",
     "tier": 2,
     "prerequisites": ["planche_leans"],
     "equipment": ["Podłoga", "Paraletki"],
@@ -29,6 +35,8 @@
   {
     "id": "advanced_tuck_planche",
     "name": "Advanced Tuck Planche",
+    "skill_group": "Planche",
+    "group_difficulty_class": "S",
     "tier": 3,
     "prerequisites": ["tuck_planche"],
     "equipment": ["Podłoga", "Paraletki"],
@@ -38,6 +46,8 @@
   {
     "id": "straddle_planche",
     "name": "Straddle Planche",
+    "skill_group": "Planche",
+    "group_difficulty_class": "S",
     "tier": 4,
     "prerequisites": ["advanced_tuck_planche"],
     "equipment": ["Podłoga", "Paraletki"],
@@ -47,6 +57,8 @@
   {
     "id": "full_planche",
     "name": "Full Planche",
+    "skill_group": "Planche",
+    "group_difficulty_class": "S",
     "tier": 5,
     "prerequisites": ["straddle_planche"],
     "equipment": ["Podłoga", "Paraletki"],
@@ -56,6 +68,8 @@
   {
     "id": "pseudo_planche_push_ups",
     "name": "Pseudo Planche Push-Ups (PPPU)",
+    "skill_group": "Planche",
+    "group_difficulty_class": "S",
     "tier": 3,
     "prerequisites": ["tuck_planche"],
     "equipment": ["Podłoga", "Paraletki"],
@@ -65,6 +79,8 @@
   {
     "id": "tuck_planche_push_ups",
     "name": "Tuck Planche Push-Ups",
+    "skill_group": "Planche",
+    "group_difficulty_class": "S",
     "tier": 3,
     "prerequisites": ["pseudo_planche_push_ups", "tuck_planche"],
     "equipment": ["Paraletki"],
@@ -74,6 +90,8 @@
   {
     "id": "straddle_planche_push_ups",
     "name": "Straddle Planche Push-Ups",
+    "skill_group": "Planche",
+    "group_difficulty_class": "S",
     "tier": 4,
     "prerequisites": ["tuck_planche_push_ups", "straddle_planche"],
     "equipment": ["Paraletki"],
@@ -83,6 +101,8 @@
   {
     "id": "full_planche_press",
     "name": "Full Planche Press / Push-Ups",
+    "skill_group": "Planche",
+    "group_difficulty_class": "S",
     "tier": 5,
     "prerequisites": ["straddle_planche_push_ups", "full_planche"],
     "equipment": ["Paraletki"],
@@ -92,6 +112,8 @@
   {
     "id": "scapular_pull_ups",
     "name": "Scapular Pull-ups",
+    "skill_group": "Front Lever",
+    "group_difficulty_class": "A",
     "tier": 1,
     "prerequisites": [],
     "equipment": ["Drążek"],
@@ -101,6 +123,8 @@
   {
     "id": "hollow_body_hold",
     "name": "Hollow Body Hold",
+    "skill_group": "Front Lever",
+    "group_difficulty_class": "A",
     "tier": 1,
     "prerequisites": [],
     "equipment": ["Podłoga", "Mata"],
@@ -110,6 +134,8 @@
   {
     "id": "australian_pull_ups",
     "name": "Podciąganie Australijskie",
+    "skill_group": "Front Lever",
+    "group_difficulty_class": "A",
     "tier": 1,
     "prerequisites": ["scapular_pull_ups"],
     "equipment": ["Drążek", "Kółka gimnastyczne"],
@@ -119,6 +145,8 @@
   {
     "id": "tuck_front_lever",
     "name": "Tuck Front Lever",
+    "skill_group": "Front Lever",
+    "group_difficulty_class": "A",
     "tier": 2,
     "prerequisites": ["hollow_body_hold", "australian_pull_ups"],
     "equipment": ["Drążek"],
@@ -128,6 +156,8 @@
   {
     "id": "advanced_tuck_front_lever",
     "name": "Advanced Tuck Front Lever",
+    "skill_group": "Front Lever",
+    "group_difficulty_class": "A",
     "tier": 3,
     "prerequisites": ["tuck_front_lever"],
     "equipment": ["Drążek"],
@@ -137,6 +167,8 @@
   {
     "id": "straddle_front_lever",
     "name": "Straddle Front Lever",
+    "skill_group": "Front Lever",
+    "group_difficulty_class": "A",
     "tier": 4,
     "prerequisites": ["advanced_tuck_front_lever"],
     "equipment": ["Drążek"],
@@ -146,6 +178,8 @@
   {
     "id": "full_front_lever",
     "name": "Full Front Lever",
+    "skill_group": "Front Lever",
+    "group_difficulty_class": "A",
     "tier": 5,
     "prerequisites": ["straddle_front_lever"],
     "equipment": ["Drążek"],
@@ -155,6 +189,8 @@
   {
     "id": "ice_cream_makers",
     "name": "Ice Cream Makers",
+    "skill_group": "Front Lever",
+    "group_difficulty_class": "A",
     "tier": 3,
     "prerequisites": ["tuck_front_lever"],
     "equipment": ["Drążek"],
@@ -164,6 +200,8 @@
   {
     "id": "tuck_front_lever_pull_ups",
     "name": "Tuck Front Lever Pull-Ups",
+    "skill_group": "Front Lever",
+    "group_difficulty_class": "A",
     "tier": 4,
     "prerequisites": ["ice_cream_makers", "advanced_tuck_front_lever"],
     "equipment": ["Drążek"],
@@ -173,6 +211,8 @@
   {
     "id": "full_front_lever_pull_ups",
     "name": "Full Front Lever Pull-Ups",
+    "skill_group": "Front Lever",
+    "group_difficulty_class": "A",
     "tier": 5,
     "prerequisites": ["tuck_front_lever_pull_ups", "full_front_lever"],
     "equipment": ["Drążek"],
@@ -182,6 +222,8 @@
   {
     "id": "pike_hold",
     "name": "Pike Hold",
+    "skill_group": "Handstand",
+    "group_difficulty_class": "A/C",
     "tier": 1,
     "prerequisites": ["plank"],
     "equipment": ["Podłoga"],
@@ -191,6 +233,8 @@
   {
     "id": "wall_walk",
     "name": "Wall Walk (Wejście po ścianie)",
+    "skill_group": "Handstand",
+    "group_difficulty_class": "A/C",
     "tier": 1,
     "prerequisites": ["pike_hold"],
     "equipment": ["Podłoga", "Ściana"],
@@ -200,6 +244,8 @@
   {
     "id": "handstand_stomach_to_wall",
     "name": "Handstand (Brzuch do ściany)",
+    "skill_group": "Handstand",
+    "group_difficulty_class": "A/C",
     "tier": 2,
     "prerequisites": ["wall_walk", "hollow_body_hold"],
     "equipment": ["Podłoga", "Ściana"],
@@ -209,6 +255,8 @@
   {
     "id": "freestanding_handstand",
     "name": "Wolnostojący Handstand",
+    "skill_group": "Handstand",
+    "group_difficulty_class": "A/C",
     "tier": 3,
     "prerequisites": ["handstand_stomach_to_wall"],
     "equipment": ["Podłoga", "Paraletki"],
@@ -218,6 +266,8 @@
   {
     "id": "clean_handstand",
     "name": "Czysty Handstand",
+    "skill_group": "Handstand",
+    "group_difficulty_class": "A/C",
     "tier": 4,
     "prerequisites": ["freestanding_handstand"],
     "equipment": ["Podłoga", "Paraletki"],
@@ -227,6 +277,8 @@
   {
     "id": "one_arm_handstand",
     "name": "One-Arm Handstand (OAH)",
+    "skill_group": "Handstand",
+    "group_difficulty_class": "A/C",
     "tier": 5,
     "prerequisites": ["clean_handstand"],
     "equipment": ["Podłoga", "Paraletki"],
@@ -236,6 +288,8 @@
   {
     "id": "wall_hspu",
     "name": "Wall Handstand Push-Up",
+    "skill_group": "Handstand",
+    "group_difficulty_class": "A/C",
     "tier": 3,
     "prerequisites": ["handstand_stomach_to_wall", "pike_hold"],
     "equipment": ["Podłoga", "Ściana"],
@@ -245,6 +299,8 @@
   {
     "id": "freestanding_hspu",
     "name": "Wolnostojące HSPU",
+    "skill_group": "Handstand",
+    "group_difficulty_class": "A/C",
     "tier": 4,
     "prerequisites": ["wall_hspu", "freestanding_handstand"],
     "equipment": ["Podłoga", "Paraletki"],
@@ -254,6 +310,8 @@
   {
     "id": "press_to_handstand",
     "name": "Press to Handstand",
+    "skill_group": "Handstand",
+    "group_difficulty_class": "A/C",
     "tier": 5,
     "prerequisites": ["freestanding_hspu"],
     "equipment": ["Podłoga", "Paraletki"],
@@ -263,6 +321,8 @@
   {
     "id": "pull_ups",
     "name": "Podciąganie Nachwytem",
+    "skill_group": "Muscle-Up",
+    "group_difficulty_class": "A/B",
     "tier": 1,
     "prerequisites": ["scapular_pull_ups"],
     "equipment": ["Drążek"],
@@ -272,6 +332,8 @@
   {
     "id": "straight_bar_dips",
     "name": "Dipy na drążku prostym",
+    "skill_group": "Muscle-Up",
+    "group_difficulty_class": "A/B",
     "tier": 1,
     "prerequisites": [],
     "equipment": ["Drążek"],
@@ -281,6 +343,8 @@
   {
     "id": "jumping_muscle_up",
     "name": "Jumping Muscle-Up / Negatywy",
+    "skill_group": "Muscle-Up",
+    "group_difficulty_class": "A/B",
     "tier": 2,
     "prerequisites": ["pull_ups", "straight_bar_dips"],
     "equipment": ["Drążek"],
@@ -290,6 +354,8 @@
   {
     "id": "banded_muscle_up",
     "name": "Muscle-Up z Gumą (Kipping)",
+    "skill_group": "Muscle-Up",
+    "group_difficulty_class": "A/B",
     "tier": 3,
     "prerequisites": ["jumping_muscle_up"],
     "equipment": ["Drążek", "Guma Oporowa"],
@@ -299,6 +365,8 @@
   {
     "id": "kipping_muscle_up",
     "name": "Kipping Muscle-Up",
+    "skill_group": "Muscle-Up",
+    "group_difficulty_class": "A/B",
     "tier": 4,
     "prerequisites": ["banded_muscle_up"],
     "equipment": ["Drążek"],
@@ -308,6 +376,8 @@
   {
     "id": "strict_false_grip_pull_ups",
     "name": "Strict False Grip Pull-ups",
+    "skill_group": "Muscle-Up",
+    "group_difficulty_class": "A/B",
     "tier": 3,
     "prerequisites": ["jumping_muscle_up"],
     "equipment": ["Drążek", "Kółka gimnastyczne"],
@@ -317,6 +387,8 @@
   {
     "id": "strict_muscle_up",
     "name": "Strict Muscle-Up",
+    "skill_group": "Muscle-Up",
+    "group_difficulty_class": "A/B",
     "tier": 4,
     "prerequisites": ["strict_false_grip_pull_ups"],
     "equipment": ["Drążek", "Kółka gimnastyczne"],
@@ -326,6 +398,8 @@
   {
     "id": "slow_muscle_up",
     "name": "Slow Muscle-Up",
+    "skill_group": "Muscle-Up",
+    "group_difficulty_class": "A/B",
     "tier": 5,
     "prerequisites": ["strict_muscle_up"],
     "equipment": ["Kółka gimnastyczne", "Drążek"],
@@ -335,6 +409,8 @@
   {
     "id": "german_hang",
     "name": "German Hang",
+    "skill_group": "Back Lever",
+    "group_difficulty_class": "B",
     "tier": 1,
     "prerequisites": [],
     "equipment": ["Drążek"],
@@ -344,6 +420,8 @@
   {
     "id": "skin_the_cat",
     "name": "Skin the Cat",
+    "skill_group": "Back Lever",
+    "group_difficulty_class": "B",
     "tier": 1,
     "prerequisites": ["german_hang"],
     "equipment": ["Drążek"],
@@ -353,6 +431,8 @@
   {
     "id": "tuck_back_lever",
     "name": "Tuck Back Lever",
+    "skill_group": "Back Lever",
+    "group_difficulty_class": "B",
     "tier": 2,
     "prerequisites": ["skin_the_cat"],
     "equipment": ["Drążek"],
@@ -362,6 +442,8 @@
   {
     "id": "advanced_tuck_back_lever",
     "name": "Advanced Tuck Back Lever",
+    "skill_group": "Back Lever",
+    "group_difficulty_class": "B",
     "tier": 3,
     "prerequisites": ["tuck_back_lever"],
     "equipment": ["Drążek"],
@@ -371,6 +453,8 @@
   {
     "id": "full_back_lever",
     "name": "Full Back Lever",
+    "skill_group": "Back Lever",
+    "group_difficulty_class": "B",
     "tier": 4,
     "prerequisites": ["advanced_tuck_back_lever"],
     "equipment": ["Drążek"],
@@ -380,6 +464,8 @@
   {
     "id": "back_lever_raises",
     "name": "Back Lever Raises",
+    "skill_group": "Back Lever",
+    "group_difficulty_class": "B",
     "tier": 3,
     "prerequisites": ["tuck_back_lever"],
     "equipment": ["Drążek"],
@@ -389,6 +475,8 @@
   {
     "id": "back_lever_pull_outs",
     "name": "Back Lever Pull-outs (Pelican)",
+    "skill_group": "Back Lever",
+    "group_difficulty_class": "B",
     "tier": 5,
     "prerequisites": ["back_lever_raises", "full_back_lever"],
     "equipment": ["Drążek", "Kółka gimnastyczne"],
@@ -398,6 +486,8 @@
   {
     "id": "support_hold",
     "name": "Support Hold na poręczach",
+    "skill_group": "L-Sit",
+    "group_difficulty_class": "C",
     "tier": 1,
     "prerequisites": [],
     "equipment": ["Poręcze do dipów", "Paraletki"],
@@ -407,6 +497,8 @@
   {
     "id": "hanging_knee_raises",
     "name": "Unoszenie kolan w zwisie",
+    "skill_group": "L-Sit",
+    "group_difficulty_class": "C",
     "tier": 1,
     "prerequisites": [],
     "equipment": ["Drążek"],
@@ -416,6 +508,8 @@
   {
     "id": "tuck_l_sit",
     "name": "Tuck L-Sit",
+    "skill_group": "L-Sit",
+    "group_difficulty_class": "C",
     "tier": 2,
     "prerequisites": ["support_hold", "hanging_knee_raises"],
     "equipment": ["Poręcze do dipów", "Paraletki", "Podłoga"],
@@ -425,6 +519,8 @@
   {
     "id": "one_leg_l_sit",
     "name": "One-Leg L-Sit",
+    "skill_group": "L-Sit",
+    "group_difficulty_class": "C",
     "tier": 3,
     "prerequisites": ["tuck_l_sit"],
     "equipment": ["Poręcze do dipów", "Paraletki", "Podłoga"],
@@ -434,6 +530,8 @@
   {
     "id": "full_l_sit",
     "name": "Pełny L-Sit",
+    "skill_group": "L-Sit",
+    "group_difficulty_class": "C",
     "tier": 4,
     "prerequisites": ["one_leg_l_sit"],
     "equipment": ["Poręcze do dipów", "Paraletki", "Podłoga"],
@@ -443,6 +541,8 @@
   {
     "id": "v_sit",
     "name": "V-Sit / Manna",
+    "skill_group": "L-Sit",
+    "group_difficulty_class": "C",
     "tier": 5,
     "prerequisites": ["full_l_sit"],
     "equipment": ["Poręcze do dipów", "Paraletki", "Podłoga"],
@@ -452,6 +552,8 @@
   {
     "id": "l_sit_raises",
     "name": "Wznosy nóg z podporu",
+    "skill_group": "L-Sit",
+    "group_difficulty_class": "C",
     "tier": 3,
     "prerequisites": ["tuck_l_sit"],
     "equipment": ["Poręcze do dipów", "Paraletki", "Podłoga"],
@@ -461,6 +563,8 @@
   {
     "id": "l_sit_to_handstand",
     "name": "L-Sit to Handstand Press",
+    "skill_group": "L-Sit",
+    "group_difficulty_class": "C",
     "tier": 5,
     "prerequisites": ["v_sit", "press_to_handstand"],
     "equipment": ["Paraletki"],
@@ -470,6 +574,8 @@
   {
     "id": "deep_squat",
     "name": "Pełny Głęboki Przysiad",
+    "skill_group": "Pistol Squat",
+    "group_difficulty_class": "C",
     "tier": 1,
     "prerequisites": [],
     "equipment": ["Podłoga"],
@@ -479,6 +585,8 @@
   {
     "id": "cossack_squats",
     "name": "Przysiady Kozackie",
+    "skill_group": "Pistol Squat",
+    "group_difficulty_class": "C",
     "tier": 1,
     "prerequisites": ["deep_squat"],
     "equipment": ["Podłoga"],
@@ -488,6 +596,8 @@
   {
     "id": "assisted_pistol_squat",
     "name": "Assisted Pistol Squat",
+    "skill_group": "Pistol Squat",
+    "group_difficulty_class": "C",
     "tier": 2,
     "prerequisites": ["cossack_squats"],
     "equipment": ["Podłoga", "Guma Oporowa"],
@@ -497,6 +607,8 @@
   {
     "id": "pistol_squat_negatives",
     "name": "Pistol Squat (Negatywy)",
+    "skill_group": "Pistol Squat",
+    "group_difficulty_class": "C",
     "tier": 3,
     "prerequisites": ["assisted_pistol_squat"],
     "equipment": ["Podłoga"],
@@ -506,6 +618,8 @@
   {
     "id": "full_pistol_squat",
     "name": "Full Pistol Squat",
+    "skill_group": "Pistol Squat",
+    "group_difficulty_class": "C",
     "tier": 4,
     "prerequisites": ["pistol_squat_negatives"],
     "equipment": ["Podłoga"],
@@ -515,6 +629,8 @@
   {
     "id": "weighted_pistol_squat",
     "name": "Pistol Squat z obciążeniem",
+    "skill_group": "Pistol Squat",
+    "group_difficulty_class": "C",
     "tier": 4,
     "prerequisites": ["full_pistol_squat"],
     "equipment": ["Podłoga"],
@@ -524,6 +640,8 @@
   {
     "id": "shrimp_squat",
     "name": "Shrimp Squat",
+    "skill_group": "Pistol Squat",
+    "group_difficulty_class": "C",
     "tier": 5,
     "prerequisites": ["full_pistol_squat"],
     "equipment": ["Podłoga"],
@@ -533,6 +651,8 @@
   {
     "id": "side_plank",
     "name": "Side Plank (Deska bokiem)",
+    "skill_group": "Human Flag",
+    "group_difficulty_class": "A",
     "tier": 1,
     "prerequisites": ["plank"],
     "equipment": ["Podłoga", "Mata"],
@@ -542,6 +662,8 @@
   {
     "id": "tuck_flag",
     "name": "Tuck Flag / Vertical Flag (Świeca)",
+    "skill_group": "Human Flag",
+    "group_difficulty_class": "A",
     "tier": 2,
     "prerequisites": ["side_plank", "pull_ups"],
     "equipment": ["Drabinka", "Rurka pionowa"],
@@ -551,6 +673,8 @@
   {
     "id": "advanced_tuck_flag",
     "name": "Advanced Tuck / Straddle Flag",
+    "skill_group": "Human Flag",
+    "group_difficulty_class": "A",
     "tier": 3,
     "prerequisites": ["tuck_flag"],
     "equipment": ["Drabinka", "Rurka pionowa"],
@@ -560,6 +684,8 @@
   {
     "id": "full_human_flag",
     "name": "Full Human Flag",
+    "skill_group": "Human Flag",
+    "group_difficulty_class": "A",
     "tier": 4,
     "prerequisites": ["advanced_tuck_flag"],
     "equipment": ["Drabinka", "Rurka pionowa"],
@@ -569,6 +695,8 @@
   {
     "id": "x_flag",
     "name": "X-Flag",
+    "skill_group": "Human Flag",
+    "group_difficulty_class": "A",
     "tier": 5,
     "prerequisites": ["full_human_flag"],
     "equipment": ["Drabinka", "Rurka pionowa"],
@@ -578,6 +706,8 @@
   {
     "id": "flag_negatives",
     "name": "Human Flag Negatives",
+    "skill_group": "Human Flag",
+    "group_difficulty_class": "A",
     "tier": 3,
     "prerequisites": ["tuck_flag"],
     "equipment": ["Drabinka", "Rurka pionowa"],
@@ -587,6 +717,8 @@
   {
     "id": "flag_raises",
     "name": "Human Flag Raises",
+    "skill_group": "Human Flag",
+    "group_difficulty_class": "A",
     "tier": 4,
     "prerequisites": ["flag_negatives"],
     "equipment": ["Drabinka", "Rurka pionowa"],
@@ -596,6 +728,8 @@
   {
     "id": "human_flag_pull_ups",
     "name": "Human Flag Pull-Ups",
+    "skill_group": "Human Flag",
+    "group_difficulty_class": "A",
     "tier": 5,
     "prerequisites": ["full_human_flag"],
     "equipment": ["Drabinka", "Rurka pionowa"],
@@ -605,6 +739,8 @@
   {
     "id": "active_one_arm_hang",
     "name": "Active One-Arm Hang",
+    "skill_group": "One-Arm Pull-Up",
+    "group_difficulty_class": "S",
     "tier": 1,
     "prerequisites": ["scapular_pull_ups"],
     "equipment": ["Drążek"],
@@ -614,6 +750,8 @@
   {
     "id": "weighted_pull_ups",
     "name": "Weighted Pull-Ups",
+    "skill_group": "One-Arm Pull-Up",
+    "group_difficulty_class": "S",
     "tier": 2,
     "prerequisites": ["pull_ups"],
     "equipment": ["Drążek"],
@@ -623,6 +761,8 @@
   {
     "id": "top_lock_off",
     "name": "Top Lock-off",
+    "skill_group": "One-Arm Pull-Up",
+    "group_difficulty_class": "S",
     "tier": 3,
     "prerequisites": ["active_one_arm_hang", "weighted_pull_ups"],
     "equipment": ["Drążek"],
@@ -632,6 +772,8 @@
   {
     "id": "90_degree_lock_off",
     "name": "90-Degree Lock-off",
+    "skill_group": "One-Arm Pull-Up",
+    "group_difficulty_class": "S",
     "tier": 4,
     "prerequisites": ["top_lock_off"],
     "equipment": ["Drążek"],
@@ -641,6 +783,8 @@
   {
     "id": "one_arm_negatives",
     "name": "One-Arm Negatives",
+    "skill_group": "One-Arm Pull-Up",
+    "group_difficulty_class": "S",
     "tier": 5,
     "prerequisites": ["90_degree_lock_off"],
     "equipment": ["Drążek"],
@@ -650,6 +794,8 @@
   {
     "id": "archer_pull_ups",
     "name": "Archer Pull-Ups (Podciąganie Łucznika)",
+    "skill_group": "One-Arm Pull-Up",
+    "group_difficulty_class": "S",
     "tier": 3,
     "prerequisites": ["weighted_pull_ups"],
     "equipment": ["Drążek", "Kółka gimnastyczne"],
@@ -659,6 +805,8 @@
   {
     "id": "assisted_oapu",
     "name": "Assisted One-Arm Pull-Up",
+    "skill_group": "One-Arm Pull-Up",
+    "group_difficulty_class": "S",
     "tier": 4,
     "prerequisites": ["archer_pull_ups"],
     "equipment": ["Drążek", "Guma Oporowa"],
@@ -668,6 +816,8 @@
   {
     "id": "strict_oapu",
     "name": "Strict One-Arm Pull-Up",
+    "skill_group": "One-Arm Pull-Up",
+    "group_difficulty_class": "S",
     "tier": 5,
     "prerequisites": ["assisted_oapu", "one_arm_negatives"],
     "equipment": ["Drążek"],
@@ -677,6 +827,8 @@
   {
     "id": "lying_leg_raises",
     "name": "Lying Leg Raises (Wznosy nóg leżąc)",
+    "skill_group": "Dragon Flag",
+    "group_difficulty_class": "C",
     "tier": 1,
     "prerequisites": ["hollow_body_hold"],
     "equipment": ["Podłoga", "Mata"],
@@ -686,6 +838,8 @@
   {
     "id": "toes_to_bar",
     "name": "Toes to Bar (Stopy do drążka)",
+    "skill_group": "Dragon Flag",
+    "group_difficulty_class": "C",
     "tier": 1,
     "prerequisites": ["hanging_knee_raises"],
     "equipment": ["Drążek"],
@@ -695,6 +849,8 @@
   {
     "id": "tuck_dragon_flag",
     "name": "Tuck Dragon Flag",
+    "skill_group": "Dragon Flag",
+    "group_difficulty_class": "C",
     "tier": 2,
     "prerequisites": ["lying_leg_raises", "toes_to_bar"],
     "equipment": ["Podłoga", "Mata"],
@@ -704,6 +860,8 @@
   {
     "id": "advanced_tuck_dragon_flag",
     "name": "Advanced Tuck Dragon Flag",
+    "skill_group": "Dragon Flag",
+    "group_difficulty_class": "C",
     "tier": 3,
     "prerequisites": ["tuck_dragon_flag"],
     "equipment": ["Podłoga", "Mata"],
@@ -713,6 +871,8 @@
   {
     "id": "full_dragon_flag",
     "name": "Full Dragon Flag Hold",
+    "skill_group": "Dragon Flag",
+    "group_difficulty_class": "C",
     "tier": 4,
     "prerequisites": ["advanced_tuck_dragon_flag"],
     "equipment": ["Podłoga", "Mata"],
@@ -722,6 +882,8 @@
   {
     "id": "dragon_flag_pole",
     "name": "Dragon Flag na rurce pionowej",
+    "skill_group": "Dragon Flag",
+    "group_difficulty_class": "C",
     "tier": 5,
     "prerequisites": ["full_dragon_flag"],
     "equipment": ["Rurka pionowa"],
@@ -731,6 +893,8 @@
   {
     "id": "dragon_flag_negatives",
     "name": "Dragon Flag Negatives",
+    "skill_group": "Dragon Flag",
+    "group_difficulty_class": "C",
     "tier": 3,
     "prerequisites": ["tuck_dragon_flag"],
     "equipment": ["Podłoga", "Mata"],
@@ -740,6 +904,8 @@
   {
     "id": "dragon_flag_raises",
     "name": "Dragon Flag Raises",
+    "skill_group": "Dragon Flag",
+    "group_difficulty_class": "C",
     "tier": 4,
     "prerequisites": ["dragon_flag_negatives"],
     "equipment": ["Podłoga", "Mata"],
@@ -749,6 +915,8 @@
   {
     "id": "dragon_flag_flutters",
     "name": "Dragon Flag Flutters (Nożyce w powietrzu)",
+    "skill_group": "Dragon Flag",
+    "group_difficulty_class": "C",
     "tier": 5,
     "prerequisites": ["dragon_flag_raises", "full_dragon_flag"],
     "equipment": ["Podłoga", "Mata"],
@@ -758,6 +926,8 @@
   {
     "id": "diamond_push_ups",
     "name": "Pompki Diamentowe",
+    "skill_group": "One-Arm Push-Up",
+    "group_difficulty_class": "B",
     "tier": 1,
     "prerequisites": ["plank"],
     "equipment": ["Podłoga", "Mata"],
@@ -767,6 +937,8 @@
   {
     "id": "one_arm_plank",
     "name": "One-Arm Plank (Deska Jednorącz)",
+    "skill_group": "One-Arm Push-Up",
+    "group_difficulty_class": "B",
     "tier": 1,
     "prerequisites": ["plank"],
     "equipment": ["Podłoga", "Mata"],
@@ -776,6 +948,8 @@
   {
     "id": "archer_push_ups",
     "name": "Archer Push-Ups (Pompki Łucznika)",
+    "skill_group": "One-Arm Push-Up",
+    "group_difficulty_class": "B",
     "tier": 2,
     "prerequisites": ["diamond_push_ups", "one_arm_plank"],
     "equipment": ["Podłoga", "Mata"],
@@ -785,6 +959,8 @@
   {
     "id": "incline_one_arm_plank",
     "name": "Incline One-Arm Plank",
+    "skill_group": "One-Arm Push-Up",
+    "group_difficulty_class": "B",
     "tier": 3,
     "prerequisites": ["one_arm_plank"],
     "equipment": ["Skrzynia", "Ławka"],
@@ -794,6 +970,8 @@
   {
     "id": "one_arm_push_up_negatives",
     "name": "One-Arm Push-Up Negatives",
+    "skill_group": "One-Arm Push-Up",
+    "group_difficulty_class": "B",
     "tier": 4,
     "prerequisites": ["incline_one_arm_plank", "archer_push_ups"],
     "equipment": ["Podłoga"],
@@ -803,6 +981,8 @@
   {
     "id": "bottom_hold_oapu",
     "name": "Bottom Hold One-Arm Push-Up",
+    "skill_group": "One-Arm Push-Up",
+    "group_difficulty_class": "B",
     "tier": 5,
     "prerequisites": ["one_arm_push_up_negatives"],
     "equipment": ["Podłoga"],
@@ -812,6 +992,8 @@
   {
     "id": "incline_oapu",
     "name": "Incline One-Arm Push-Up (Pompka o podwyższenie)",
+    "skill_group": "One-Arm Push-Up",
+    "group_difficulty_class": "B",
     "tier": 3,
     "prerequisites": ["archer_push_ups"],
     "equipment": ["Skrzynia", "Ławka"],
@@ -821,6 +1003,8 @@
   {
     "id": "straddle_oapu",
     "name": "Straddle One-Arm Push-Up (W szerokim rozkroku)",
+    "skill_group": "One-Arm Push-Up",
+    "group_difficulty_class": "B",
     "tier": 4,
     "prerequisites": ["incline_oapu", "one_arm_push_up_negatives"],
     "equipment": ["Podłoga"],
@@ -830,6 +1014,8 @@
   {
     "id": "strict_one_arm_push_up",
     "name": "Strict One-Arm Push-Up (Wąski rozstaw nóg)",
+    "skill_group": "One-Arm Push-Up",
+    "group_difficulty_class": "B",
     "tier": 5,
     "prerequisites": ["straddle_oapu", "bottom_hold_oapu"],
     "equipment": ["Podłoga"],
